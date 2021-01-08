@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/redtube/static/css/main.d499308a.chunk.css",
+    "main.js": "/redtube/static/js/main.09653493.chunk.js",
+    "main.js.map": "/redtube/static/js/main.09653493.chunk.js.map",
+    "runtime-main.js": "/redtube/static/js/runtime-main.cab5f7e4.js",
+    "runtime-main.js.map": "/redtube/static/js/runtime-main.cab5f7e4.js.map",
+    "static/js/2.0c11abda.chunk.js": "/redtube/static/js/2.0c11abda.chunk.js",
+    "static/js/2.0c11abda.chunk.js.map": "/redtube/static/js/2.0c11abda.chunk.js.map",
+    "index.html": "/redtube/index.html",
+    "static/css/main.d499308a.chunk.css.map": "/redtube/static/css/main.d499308a.chunk.css.map",
+    "static/js/2.0c11abda.chunk.js.LICENSE.txt": "/redtube/static/js/2.0c11abda.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cab5f7e4.js",
+    "static/js/2.0c11abda.chunk.js",
+    "static/css/main.d499308a.chunk.css",
+    "static/js/main.09653493.chunk.js"
+  ]
+}
