@@ -7,6 +7,7 @@ const VideoDetail = ({video, video: {snippet}}) => {
             <iframe
                 className={styles.video}
                 type="text/html"
+                title="youtube video player"
                 width="100%"
                 height="500px"
                 src={`https://www.youtube.com/embed/${video.id}?autoplay=1`}
@@ -16,7 +17,7 @@ const VideoDetail = ({video, video: {snippet}}) => {
             <h3>{snippet.channelTitle}</h3>
             <pre className={styles.description}>{snippet.description}</pre>
         </section>
-    )
-}
+    );
+};
 
 export default VideoDetail;

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useCallback} from 'react';
 import styles from './app.module.css';
 import VideoList from "./components/video_list/video_list";
 import SearchHeader from "./components/search_header/search_header";
@@ -8,19 +8,20 @@ function App({youtube}) {
     const [videos, setVideos] = useState([]);
     const [selectedVideo, setSelectedVideo] = useState(null);
 
-    const selectVideo = video => {
+    const selectVideo = useCallback(video => {
         setSelectedVideo(video);
-    }
+    }, []);
 
-    const search = async (query) => {
+    const search = useCallback(async (query) => {
         const response = await youtube.search(query);
         setVideos(response);
         setSelectedVideo(null);
-    };
+    }, [youtube]);
 
     useEffect(() => {
         youtube.mostPopular().then(videos => setVideos(videos));
-    }, []);
+    }, [youtube]);
+
     return (
         <div className={styles.app}>
             <SearchHeader onSearch={search}/>
